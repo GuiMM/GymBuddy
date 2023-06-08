@@ -20,3 +20,5 @@ npm notice
 
 To execute with expo app we run:
 expo start --tunnel 
+
+OBS:Caso de erro: clicar no botao de refresh no menu de notificacao do celular(puxando pra baixo)
