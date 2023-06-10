@@ -8,4 +8,5 @@ export default function AppProvider ({ children }) {
       <NavigationContainer>{children}</NavigationContainer>
     </View>
   );
+  
 };

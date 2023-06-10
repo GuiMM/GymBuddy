@@ -1,20 +1,17 @@
 import React from 'react';
 import { Image } from 'react-native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 // import AppRoutes from './app.routes';
-import Logo from '../../assets/favicon.png';
-import Dashboard from '../pages/Dashboard';
 import Home from '../pages/Home';
 import ExerciseSet from '../pages/ExerciseSet'
 
-const App = createStackNavigator();
+const App = createNativeStackNavigator();
 export default function Routes() {
   return (
-  
         <App.Navigator
         screenOptions={{
             headerShown: true,
-            cardStyle: { backgroundColor: '#EBEEF8' },
+            contentStyle: { backgroundColor: '#eb4034' },
         }}
         initialRouteName="Home"
         >
@@ -32,9 +29,8 @@ export default function Routes() {
                     headerTransparent: true
                 }}
                 name="ExerciseSet"
-                component={Home}
+                component={ExerciseSet}
                 />
-
 
         </App.Navigator>
   )
